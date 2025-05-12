@@ -18,4 +18,51 @@ A bank needs a system to manage customer accounts, employees, loans, and transac
 
 ## Task ERD and Mapping:
 
-![College Management System ERD and Mapping](../image/Task4BankingSystem.png)
+![Banking System ERD and Mapping](../image/Task4BankingSystem.png)
+
+![Banking System Normaliztion](../image/BankSystemNormaliztion.png)
+
+**1. First Normal Form (1NF) Solution:**
+|CustomerID |CustomerName |Branch |RelationshipManager |
+|-----------|-------------|-------|--------------------|
+|C001       |Latifa       |Seeb   |Mr. Jamal           |
+|C002       |Khalid       |Mutrah |Ms. Huda            |
+|C003       |Rania        |Seeb   |Mr. Jamal           |
+
+
+|CustomerID |AccountsID |Accounts Type |
+|-----------|-----------|--------------|
+|C001       |A001       |Savings       |
+|C001       |A002       |Credit        |
+|C002       |A003       |Current       |
+|C003       |A004       |Savings       |
+|C003       |A005       |Loan          |
+|C003       |A006       |Card          |
+
+
+--------------------------------------------------------------------------
+**2. Second Normal Form (2NF)  Solution:**
+|CustomerID |CustomerName |Branch |RelationshipManager |
+|-----------|-------------|-------|--------------------|
+|C001       |Latifa       |Seeb   |Mr. Jamal           |
+|C002       |Khalid       |Mutrah |Ms. Huda            |
+|C003       |Rania        |Seeb   |Mr. Jamal           |
+
+
+|AccountsID |Accounts Type |
+|-----------|--------------|
+|A001       |Savings       |
+|A002       |Credit        |
+|A003       |Current       |
+|A004       |Savings       |
+|A005       |Loan          |
+|A006       |Card          |
+
+|CustomerID |AccountsID |
+|-----------|-----------|
+|C001       |A001       |
+|C001       |A002       |
+|C002       |A003       |
+|C003       |A004       |
+|C003       |A005       |
+|C003       |A006       |
