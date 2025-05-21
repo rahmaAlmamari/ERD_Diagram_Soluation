@@ -48,15 +48,15 @@ An airline system is needed to manage flight operations, schedules, reservations
      
 ## Task ERD:
 
-![Airline Information System ERD](../image/AirlineInformationSystem.png)
+![Airline Information System ERD](../image/AirlineInformationSystem.PNG)
 
 ## Task Mapping:
 
-![Airline Information System Mapping](../image/AirlineInformationSystem-mapping.png)
+![Airline Information System Mapping](../image/AirlineInformationSystem-mapping.PNG)
 
 ## Task Normaliztion:
 
-![Airline Information System Normaliztion](../image/AirlineNormaliztion.png)
+![Airline Information System Normaliztion](../image/AirlineNormaliztion.PNG)
 
 **1. First Normal Form (1NF) Solution:**
 |BookingID |PassengerName |PaymentMethod |
